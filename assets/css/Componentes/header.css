@@ -1,0 +1,23 @@
+.header {
+    display: inline-block;
+    justify-content: space-around;
+    align-items: center;
+    height: 9rem;
+    width: 9rem;
+    margin: 0 0 2rem 2rem;
+}
+
+.header__logo {
+    width: 7rem;
+    margin:  1rem;
+}
+
+.header__titulo{
+    font-family: var(--font-family-logo);
+    font-size: var(--font-size-logo);
+    font-weight: lighter;
+    margin: 0 -2.5rem;
+    text-align: center;
+    color: var(--font-color-title);
+}
+
