@@ -49,7 +49,7 @@
     border-radius: 7px;
 }
 
-.input__container--invalid .input-label {
+.input__container--invalid .input__label {
     color: var(--warning-color);
 }
 
