@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/png" href="./assets/img/taza-de-te.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+    <link rel="stylesheet" href="./assets/css/bases/reset.css">
+    <link rel="stylesheet" href="./assets/css/bases/style.css">
+    <link rel="stylesheet" href="./assets/css/bases/variables.css">
+    <link rel="stylesheet" href="./assets/css/Componentes/header.css">
+    <link rel="stylesheet" href="./assets/css/Componentes/formulario.css">
+    <link rel="stylesheet" href="./assets/css/Componentes/inputs.css">
+    <link rel="stylesheet" href="./assets/css/Componentes/boton.css">
+</head>
+<body>
+    <header class="container flex flex--column flex--center">
+        <div class="header">
+            <img src="./assets/img/bebidas-calientes.png" alt="Vaso de Cafe" class="header__logo">
+            <h1 class="header__titulo">Cafeteria </h1>
+        </div>
+    </header>
+    <main class="container flex flex--column flex--center">
+        <section class="formulario__area" >
+            <h2 class="formulario__titulo">Completa tus datos de contacto</h2>
+            <form action="./registro_concluido.html" class="formulario flex flex--column">
+                <fieldset>
+                    <legend class="formulario__label">Información básica</legend>
+                    <div class="input__container">
+                        <input name="name" id="name" class="input" type="text" placeholder="Nombre" required data-tipo="nombre">
+                        <label class="input__label" for="name">Nombre</label>
+                        <span class="input__mensage-error">Este campo no es valido</span>
+                    </div>
+                    <div class="input__container">
+                        <input name="email" id="email" class="input" type="email" placeholder="Email" required data-tipo="email">
+                        <label class="input__label" for="email">Email</label>
+                        <span class="input__mensage-error">Este campo no es valido</span>
+                    </div>
+                    <div class="input__container">
+                        <input name="password" id="password" class="input" type="password" placeholder="Contraseña" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="Al menos 6 caracteres, máximo 12, debe contener una letra minúscula, una letra mayúscula, un número y no puede contener caracteres especiales." data-tipo="password">
+                        <label class="input__label" for="password">Contraseña</label>
+                        <span class="input__mensage-error">Este campo no es valido</span>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend class="formulario__label">Información personal</legend>
+                    <div class="input__container">
+                        <input name="birth" id="birth" class="input" type="date" placeholder="Fecha de nacimento" required data-tipo="nacimiento">
+                        <label class="input__label" for="birth">Fecha de nacimiento</label>
+                        <span class="input__mensage-error">Este campo no es valido</span>
+                    </div>
+                    <div class="input__container">
+                        <input name="phoneNumber" id="phoneNumber" class="input" type="text" placeholder="Número telefónico" pattern="\d{10}" required minlegth="10" maxlength="10" data-tipo="numero">
+                        <label class="input__label" for="phoneNumber">Número telefónico</label>
+                        <span class="input__mensage-error">Este campo no es valido</span>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend class="formulario__label">Dirección</legend>
+                    <div class="input__container">
+                        <input name="address" id="address" class="input" type="text" placeholder="Dirección" required pattern="[\s\S]{10,40}" data-tipo="direccion">
+                        <label class="input__label" for="address">Dirección completa</label>
+                        <span class="input__mensage-error">Este campo no es valido</span>
+                    </div>
+                    <div class="input__container">
+                        <input name="city" id="city" class="input" type="text" placeholder="Ciudad" required pattern="[\s\S]{4,30}" data-tipo="ciudad">
+                        <label class="input__label" for="city">Ciudad</label>
+                        <span class="input__mensage-error">Este campo no es valido</span>
+                    </div>
+                    <div class="input__container">
+                        <input name="state" id="state" class="input" type="text" placeholder="Estado" required pattern="[\s\S]{4,30}" data-tipo="estado">
+                        <label class="input__label" for="state">Estado</label>
+                        <span class="input__mensage-error">Este campo no es valido</span>
+                    </div>
+                </fieldset>
+                <button class="button">Registrar</a>
+            </form>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
