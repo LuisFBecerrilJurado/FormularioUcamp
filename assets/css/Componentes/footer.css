@@ -1,0 +1,17 @@
+footer{
+    background:  var(--font-color-title);
+    margin-top: 1rem;
+    padding: 2rem 0;
+    color: var(--contrast-light-color);
+}
+
+.footer__titulo{
+    font-size: var(--font-size-form-title);
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-family: var(--font-family-body);
+}
+
+.footer__parrafo{
+    font-family: var(--font-family-body);
+}
